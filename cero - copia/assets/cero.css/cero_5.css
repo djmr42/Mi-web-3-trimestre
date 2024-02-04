@@ -1,0 +1,66 @@
+
+
+
+  /* Estilos para la tarjeta */
+  .card {
+    border: 2px solid #ddd; /* Borde de 2px sólido con color gris claro */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 40px 28px rgba(0, 0, 0, 0.648); /* Sombra */
+    background-color: #000000;
+  }
+
+  .card-title {
+    font-weight: 20; /* Texto en negrita */
+    color: #eaeaea;
+  }
+
+  .card-text {
+    color: #dad7d7; /* Color del texto */
+  }
+h4 {
+  color: #dad7d7;
+}
+  
+  .img-bordered {
+    border: 2px solid #100f0f; /* Borde de 2px sólido con color gris claro */
+    border-radius: 10px; /* Borde redondeado */
+  }
+
+
+  /* Agregar margen entre el h1 h4 y el párrafo */
+  .card-body h1  {
+    margin-bottom: 20px; /* Puedes ajustar este valor según sea necesario */
+}
+  .card-body h4  {
+    margin-bottom: 20px; /* Puedes ajustar este valor según sea necesario */
+}
+
+
+  /* ===================== BOTON AMARILLO =====================*/
+
+
+  .fixed-button-container {
+    position: relative;
+}
+
+.fixed-button {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+/* Clase personalizada para el tamaño original del botón */
+.original-size-button {
+  /* Agrega estilos aquí para definir el tamaño original del botón */
+  font-size: 16px; /* Ejemplo: establece el tamaño de fuente */
+  padding: 10px 20px; /* Ejemplo: establece el relleno */
+}
+
+
+
+  /*------------------------------------------------------------------------*/
+
+
+  

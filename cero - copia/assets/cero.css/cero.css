@@ -1,0 +1,291 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background: rgb(255, 255, 255);
+    height: 60px; 
+    width: 100%;
+    top: 0; /* Lo fija en la parte superior de la ventana */
+    left: 0; /* Lo fija a la izquierda de la ventana */
+    position: fixed; /* Hace que el nav sea fijo */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    line-height: 60px; /* Ajusta la altura del texto verticalmente centrado */
+    /* O puedes usar padding para ajustar el espacio del texto */
+    /* padding-top: 10px; */
+}
+
+.enlace {
+    position: absolute;
+}
+
+.logo {
+    height: 40px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px; /* Puedes quitar esto si usas padding */
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: rgb(52, 52, 52);
+    font-size: 14px;
+    padding: 10px 10px; /* Ajusta el espaciado vertical del texto */
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li .active, li a:hover {
+    background: #d3d1d176;
+    transition: .5s;
+}
+
+/*
+nav ul li a:hover {
+    background-color: #01018b;
+    transition: 0.9s;
+}
+*/
+
+.checkbtn {
+    font-size: 30px;
+    color: #c70303;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+/*
+section { /* Ajusta el margen superior del contenido para dejar espacio para el nav *
+    background: url(/assets/img/p5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    margin-top: 60px; /* Ajusta según la altura del nav *
+  /*  height: calc(100vh - 80px);  *
+}
+
+*/
+
+@media (max-width: 952px) {
+ .enlace {
+    padding-left: 20px;
+ }
+ nav ul li a {
+    font-size: 14px;
+ }
+}
+
+@media (max-width: 858px) {
+ .checkbtn {
+    display: block;
+ }
+ ul{
+    position: fixed;
+    width: 100%;
+    height: 50vh;
+    background: #2c3e50;
+    top: 58px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+
+ }
+ nav ul li {
+    display: block;
+    margin: 15px 0;
+    line-height: 30px;
+ }
+ nav ul li a {
+    font-size: 20px;
+ }
+ li a:hover, li a.active {
+    background: none;
+    color: red;
+ }
+ #check:checked ~ ul {
+    left: 0;
+ }
+} 
+
+
+/* =============================DIV DE LOS CUADROS ==========================================*/
+
+#my-row-2 {
+    background-color: #ffffff; /* Cambia el color de fondo principal */
+    padding: 20px; /* Añade relleno alrededor del contenido */
+    text-align: center; /* Centra el contenido dentro del div */
+}
+
+.subServices {
+    margin-bottom: 20px; /* Añade espacio debajo del título y el párrafo */
+}
+
+.containerS {
+    display: flex;
+    justify-content: space-around; /* Distribuye uniformemente los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no caben en una sola fila */
+}
+
+.boxS {
+    width: 350px; /* Establece un ancho fijo para los elementos */
+    padding: 10px; /* Añade relleno alrededor del contenido */
+    background-color: #ffffff53; /* Cambia el color de fondo */
+    border: 1px solid #ccc; /* Añade un borde alrededor de los elementos */
+    border-radius: 10px; /* Hace que los bordes sean redondeados */
+    text-align: center; /* Centra el contenido dentro del div */
+    margin-bottom: 20px; /* Añade espacio debajo de cada elemento */
+}
+
+.boxS img {
+    width: 100px; /* Establece un ancho fijo para las imágenes */
+    margin-bottom: 10px; /* Añade espacio debajo de las imágenes */
+}
+
+.boxS h3 {
+    font-size: 1.2em; /* Ajusta el tamaño de la fuente del título */
+    margin-bottom: 10px; /* Añade espacio debajo del título */
+}
+
+.boxS p {
+    font-size: 0.9em; /* Ajusta el tamaño de la fuente del párrafo */
+}
+
+
+
+/* =============================== footer - cuadros ==============================*/
+
+
+
+/* Estilos generales para el pie de página */
+.piePagina { 
+    /*background-color: rgba(15, 51, 82, 0); */
+    color: #2d2d2d;
+  
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px 0px;
+    text-align: right;
+}
+
+/* Estilos para los íconos sociales */
+.icons {
+    display: flex;
+   
+    justify-content: left;
+    
+}
+
+/* Estilos para los íconos sociales individuales */
+.icons i {
+    margin: 0 5px;
+    font-size: 15px;
+} 
+
+/* -----------------------------------------------------------------------------------*/
+
+
+
+
+
+/*---------------------------------------------------------------------------------*/
+
+/* Estilos para los contenedores de los cuadros */
+.containerS {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilos para los cuadros */
+.boxS {
+    width: calc(33.33% - 20px); /* Ancho máximo para los cuadros */
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    animation: animateBorder 2s infinite linear;
+}
+
+/* Animación para los bordes */
+@keyframes animateBorder {
+    0% {
+        box-shadow: 0 0 10px 5px red;
+    }
+    50% {
+        box-shadow: 0 0 10px 5px blue;
+    }
+    100% {
+        box-shadow: 0 0 10px 5px rgb(0, 242, 25);
+    }
+}
+
+/* Estilos para los títulos dentro de los cuadros */
+.boxS h3 {
+    color: rgb(13, 13, 13);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgb(207, 196, 196);
+    z-index: 2;
+}
+
+/* Estilos para los párrafos dentro de los cuadros */
+.boxS p {
+    color: rgb(13, 13, 13);
+    text-align: center;
+    z-index: 2;
+}
+
+/* Media queries para hacer el diseño responsive */
+@media (max-width: 576px) {
+    /* Estilos para dispositivos extra pequeños (xs) */
+    .containerS {
+        padding: 10px; /* Reducir el padding en dispositivos extra pequeños */
+    }
+    .boxS {
+        width: calc(100% - 20px); /* Ancho máximo para los cuadros en dispositivos extra pequeños */
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    /* Estilos para dispositivos medianos (md) */
+    .containerS {
+        padding: 15px; /* Ajustar el padding en dispositivos medianos */
+    }
+    .boxS {
+        width: calc(50% - 20px); /* Ancho máximo para los cuadros en dispositivos medianos */
+    }
+}
+
+@media (min-width: 992px) {
+    /* Estilos para dispositivos grandes (lg) */
+    .containerS {
+        padding: 20px; /* Ajustar el padding en dispositivos grandes */
+    }
+}
